@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // Incorrect use of innerHTML with user-supplied data
+    let userInput = prompt("Enter some text:");
+    document.getElementById("myDiv").innerHTML = userInput;
+  </script>
+</body>
+</html>
