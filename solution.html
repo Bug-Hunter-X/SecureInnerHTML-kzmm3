@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Secure HTML Example</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // Secure way to handle user input
+    let userInput = prompt("Enter some text:");
+    //Using textContent instead of innerHTML
+    document.getElementById("myDiv").textContent = userInput;
+  </script>
+</body>
+</html>
